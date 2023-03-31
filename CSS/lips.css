@@ -35,6 +35,7 @@
     background-color: rgb(41, 37, 37);
     z-index: 101;
     position: fixed;
+    width: 100%;
 
 }
 .nav2 a{
@@ -43,7 +44,6 @@
     font-size: small;
     cursor:pointer;
     border:none;
-    text-decoration: none;
 
 }
 
@@ -113,263 +113,92 @@
     color: rgb(119, 123, 126);
 
 }
-#slideshow{
-    
-    overflow: hidden;
-}
-.slides{
-    width: 500%;
-    height: 500px;
-    border-radius: 10px;
-    display: flex;
-}
-.slides input{
-    display: none;
-}
-.slide{
-    width: 20%;
-    transition: 2s;
-}
-.nav_manual{
-    position: absolute;
-    width: 800px;
-    margin-left: 200px;
-    margin-top: -200px;
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-
-}
-.manual_btn{
-    border: 2px solid rgb(7, 7, 7);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.manual_btn:hover{
-    background: rgb(96, 78, 78);
-}
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-#radio4:checked ~ .first{
-    margin-left: -60%;
-}
-#radio5:checked ~ .first{
-    margin-left: -80%;
-}
-#radio6:checked ~ .first{
-    margin-left: -100%;
-}
-#radio7:checked ~ .first{
-    margin-left: -120%;
-}
-#radio8:checked ~ .first{
-    margin-left: -140%;
-}
-#radio9:checked ~ .first{
-    margin-left: -160%;
-}
-
-.nav_auto{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 300px;
-    margin-left: 499px;
-    gap: 10px;
-}
-.nav_auto div{
-    border:  2px solid red;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-
-}
-#radio1:checked ~ .nav_auto .autobut1{
-    background: rgb(96, 78, 78);
-
-}
-#radio2:checked ~ .nav_auto .autobut2{
-    background: rgb(96, 78, 78);
-    
-}
-#radio3:checked ~ .nav_auto .autobut3{
-    background: rgb(96, 78, 78);
-    
-}
-#radio4:checked ~ .nav_auto .autobut4{
-    background: rgb(96, 78, 78);
-    
-}
-#radio5:checked ~ .nav_auto .autobut5{
-    background: rgb(96, 78, 78);
-    
-}
-#radio6:checked ~ .nav_auto .autobut6{
-    background: rgb(96, 78, 78);
-    
-}
-#radio7:checked ~ .nav_auto .autobut7{
-    background: rgb(96, 78, 78);
-    
-}
-#radio8:checked ~ .nav_auto .autobut8{
-    background: rgb(96, 78, 78);
-    
-}
-#radio9:checked ~ .nav_auto .autobut9{
-    background: rgb(96, 78, 78);
-    
-}
-  .bestseller{
-    background-color: rgb(88, 88, 145);
-    margin-top: -160px;
+.bg-text {
+    /* The image used */
+    background-image: url("https://sugar-mobile-application.s3.amazonaws.com/collection-web-banner/Lips.jpg");
+   text-align: center;
+   margin-top: 50px;
+   filter: blur(1px);
   }
-  #bestseller_card {
-
+  .bg-text img{
+    width: 90%;
+    text-align: center;
+  }
+.body{
+    margin-top: 20px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    border: 1px solid red;
+    width: 20%;
+}
+#right{
+    border: 1px solid red;
+}
+#right{
+    background-color: rgb(88, 88, 145);
+    
+  }
+#right {
+    margin-top: 50px;
     display: flex;
     margin: auto;
     gap: 15px;
     justify-content: center;
     align-items: center;
-    margin-top: -80px;
+   
   }
-  #bestseller_card img{
-    width: 180px;
-    height: 250px;
+  #right img{
+    width: 120px;
+    height: 200px;
     border-radius: 15px;
     margin: auto;
     
   }
-  #bestseller_card h3{
+  #right h3{
     font-size: x-large;
     cursor: pointer;
+
   }
   .fas fa-shopping-cart{
     color: black;
   }
-  #bestseller_card h3:nth-child(1):hover{
+  #right h3:nth-child(1):hover{
     color: red;
   }
-  #bestseller_card h3:nth-child(2){
+  #right h3:nth-child(2){
     font-size: xx-large;
   }
-  #bestseller_card > div{
-    width: 250px;
-    height: 400px;
+  #right h3:nth-child(2):hover{
+    color: rgb(110, 112, 106);
+  }
+  #right > div{
+    width: 200px;
+    height: 350px;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     background-color: white;
     border-radius: 15px;
     gap: 15px;
+
   }
-  #bestseller_card > div >div{
+  #right > div >div{
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 15px;
+    margin-top: 10%;
   }
   hr {
     width:5%;
     margin-top: -5px;
     
 }
-.bestseller_top{
- display: flex;
- justify-content: center;
- color: white;
- margin-bottom: 50px;
 
-}
-.bestseller_top hr{
-    width: 40px;
-    height: 3px;
-    margin-top: 8px;
-    background-color: rgb(243, 37, 71);  
-}
-.bestseller_top div{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.hotdeals{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    margin-bottom: 50px;
-   
-   }
-   .hotdeals hr{
-       width: 40px;
-       height: 3px;
-       margin-top: 8px;
-       background-color: rgb(243, 37, 71);  
-   }
-   .hotdeals div{
-       margin-left: 10px;
-       margin-right: 10px;
-   }
-   .remaining{
-    padding-top: 10px;
-    background-color: #efefef;
-   }
-   .slide-container{
-    
-    display: flex;
-    justify-content: space-around;
-    
-    overflow: hidden;
-
-    
-   }
-   .slide-container img{
-    width: 400px;
-    height: 244px;
-   }
-   .left {
-    display: flex;
-    justify-content: space-around;
-    gap: 15px;
-   }
-  
-
-   .carousel {
-    background: #EEE;
-    
-  }
-  
-  .carousel-cell {
-    width: 28%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
-  }
-  .carousel img{
-    width: 100%;
-  }
-  /* cell number */
-  .carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-  }
-  #footer {
+#footer {
     width: 100%;
     height: auto;
     background-color: black;
@@ -478,5 +307,5 @@
     margin-bottom: 20px;
   }
 
-   
-
+  
+ 

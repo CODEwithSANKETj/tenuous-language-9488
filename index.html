@@ -5,7 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/445205b9df.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">                  
     <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="nav">
@@ -19,7 +29,7 @@
     <div class="nav2">
         
         <div class="dropdown">
-            <p>LIPS</p>
+            <a href="/lips.html"> LIPS</a>
             <div class="lipdiv">
                 <div class="one">
                     <h3>Lipstick </h3>
@@ -41,7 +51,7 @@
             </div>
           </div>
         <div class="dropdown1">
-            <p >FACE</p>
+            <a >FACE</a>
             <div class="hover2">
                 <div >
                     <h3>KAJAL </h3>
@@ -64,44 +74,194 @@
             </div>
             
         </div>
-        <div><p>NAILS</p></div>
-        <div><p>SKINCARE</p></div>
-        <div><p>ACCESSIORIES</p></div>
-        <div><p>GIFT KITS</p></div>
-        <div><p>BEST SELLER</p> </div>
-        <div><p>NEW LAUNCHES</p></div>
-        <div><p>OFFERS</p></div>
-        <div><p>BLOG</p></div>
+        <div><a>NAILS</a></div>
+        <div><a>SKINCARE</a></div>
+        <div><a>ACCESSIORIES</a></div>
+        <div><a>GIFT KITS</a></div>
+        <div><a>BEST SELLER</a> </div>
+        <div><a>NEW LAUNCHES</a></div>
+        <div><a>OFFERS</a></div>
+        <div><a>BLOG</a></div>
     </div>
     <div id="slideshow">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
-      </div>
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio7">
+            <input type="radio" name="radio-btn" id="radio8">
+            <input type="radio" name="radio-btn" id="radio9">
 
+
+            <div class="slide first">
+            <img src='https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff4cc339d-4a3d-47f1-b4de-80f9744a69cb.jpg&w=1200&q=75' alt="">
+            </div>
+            <div class="slide">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F14bd68a6-77a3-4cac-8d80-bce249d31a01.jpg&w=1200&q=75" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fe63bbea8-d7c4-490f-be8d-16cc843b3c44.jpg&w=1200&q=75" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0886c9f4-a521-4ff2-9ec7-6a5947860753.jpg&w=1200&q=75" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ffeb81cd7-cb89-4d40-8b45-b2f5bfe406d9.jpg&w=1200&q=75" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff3167316-1728-4c8d-8389-3e467cf033a0.jpg&w=1200&q=75" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0745fec9-3602-4f05-9d3e-c8862788ff3d.jpg&w=1200&q=75" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F069d0c1c-f78c-4d80-94f9-e65f3bbdda73.jpg&w=1200&q=75" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F9723d8e3-9e99-459f-acfe-4ef93089e9ef.jpg&w=1200&q=75" alt="">
+            </div>
+
+            <div class="nav_auto">
+                <div class="autobut1"></div>
+                <div class="autobut2"></div>
+                <div class="autobut3"></div>
+                <div class="autobut4"></div>
+                <div class="autobut5"></div>
+                <div class="autobut6"></div>
+                <div class="autobut7"></div>
+                <div class="autobut8"></div>
+                <div class="autobut9"></div>
+            </div>
+        </div>
+        <div class="nav_manual">
+            <label for="radio1" class="manual_btn"></label>
+            <label for="radio2" class="manual_btn"></label>
+            <label for="radio3" class="manual_btn"></label>
+            <label for="radio4" class="manual_btn"></label>
+            <label for="radio5" class="manual_btn"></label>
+            <label for="radio6" class="manual_btn"></label>
+            <label for="radio7" class="manual_btn"></label>
+            <label for="radio8" class="manual_btn"></label>
+            <label for="radio9" class="manual_btn"></label>
+        </div>
+    </div>
     <div class="bestseller">
         <div class="bestseller_top">
-            <hr>
-            <h3>BESTSELLER</h3>
-            <hr>
-   
+            <hr id="one">
+            <div id="mid">BEST SELLER</div>
+            <hr id="two">
         </div>
         <div id="bestseller_card">
-            
-        </div>
-        
-        
+        </div> 
     </div>
+<div class="remaining">
+    <div class="hotdeals">
+        <hr id="one">
+        <div id="mid">HOT DEALS</div>
+        <hr id="two">
+    </div>
+
+    <!-- Flickity HTML init -->
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+    <div class="carousel-cell">
+        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ffd535bbb-a35e-433c-89a7-a6b93c9a8c6c.gif&w=1200&q=75" alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F1613c6dc-b4c1-47e1-8174-4f4e070f4e50.jpg&w=1200&q=75" alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fb1530b24-5333-4464-9ae0-8d25c74c2637.jpg&w=1200&q=75" alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff2ea5182-e03c-44e4-97b8-a417bc34cf13.gif&w=1200&q=75" alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff7ab913e-22bf-4301-be48-a94da8d8c0c0.jpg&w=1200&q=75" alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F3946e48e-b0c7-4e7d-a19d-0479dd685bf3.jpg&w=1200&q=75" alt="">
+    </div>
+  </div>  
+</div>
+
+<!----------------Content End------------------->
+
+<!----------------Footer Start------------------->
+<div id="footer">
+    <img src="/Images/Glamor.png" alt="" />
+    <div id="media">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    <i class="fa-brands fa-tumblr"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-twitter"></i>
+    </div>
+    <div id="bigger">
+    <div class="stage1">
+      <div>
+        <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+        <form id="form2">
+          <input type="text" class="ip2" placeholder="Enter Your Email" />
+          <input type="Submit" value="Sign Up" />
+        </form>
+      </div>
+    
+      <div>
+        <p>GET THE NEW SUGAR APP TODAY.</p>
+        <div class="stores">
+          <div><p>Tap into a better shopping experience.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="stage2">
+      <p>INFORMATION</p>
+      <div class="info">
+        <div>Stores</div>
+        <div>Stores</div>
+        <div>Returns</div>
+        <div>FAQs</div>
+        <div>FAQs</div>
+      </div>
+    </div>
+    <div class="stage3">
+      <p>GET IN TOUCH</p>
+      <div class="cont">
+        <div>
+          <p>Call us at</p>
+          <p>1800-209-9933</p>
+          <p>Monday to Friday : 9 AM to 7 PM</p>
+        </div>
+        <div>
+          <p>Support</p>
+          <p>hello@sugarcosmetics.com</p>
+        </div>
+        <div>
+          <p>Careers</p>
+          <p>We're hiring!</p>
+        </div>
+        <div>
+          <p>PRESS & MEDIA</p>
+          <p>pr@sugarcosmetics.com</p>
+        </div>
+        <div>
+          <p>INFLUENCER COLLAB</p>
+          <p>JOIN US</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="copy">
+    <p>Copyright © 2022 GLAMOR Cosmetics. All rights reserved.</p>
+    </div>
+    </div>
+    </body>
+    <script src="/script/lips.js"></script>
+    </html>
     
 </body>
 <script src="/script/index.js"></script>
