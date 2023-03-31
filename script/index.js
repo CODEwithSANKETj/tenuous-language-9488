@@ -11,7 +11,7 @@ let slideshow = [
 ]
 
 let lips = [{
-        name : 'Matte As Hell Crayon Lipstick',
+        name : 'Matte As Hell Crayon  asian Lipstick',
         shade : '33 shades',
         price : 849,
         status : 'bestseller',
@@ -20,7 +20,7 @@ let lips = [{
       },
     {
         name : 'Smudge Me Not Liquid Lipstick Minis Set',
-        shade : null,
+        shade : 'N/A',
         price : 799,
         status : 'bestseller',
         catagory : 'lips_set',
@@ -37,30 +37,30 @@ let lips = [{
     {
         name : 'Nothing Else Matter Longwear Lipstick',
         shade : '33 shades',
-        price : 510,
+        price : '510',
         status : 'normal',
         catagory : 'lips',
-        img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_1da9dee5-9c2e-4135-994c-9b7d2ca23e6b.jpg%3Fv%3D1670501882&w=256&q=75',
+        img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-lipping-on-the-edge-lip-liner-01-taffeta-terracotta-13278188568659.jpg%3Fv%3D1619109027&w=256&q=75',
       }, 
 ]
 let Eye = [
     {
         name:'Blend The Rules Eyeshadow Palette',
-        price: 1199,
+        price: '1199',
         status : 'normal',
         catagory : 'eye_set',
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg%3Fv%3D1639755559&w=256&q=75',
     },
     {
         name:'Kohl Of Honour Intense Kajal - 01 Black Out',
-        price: 249,
+        price: '249',
         status : 'bestseller',
         catagory : 'eye',
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FKohlOfHonourIntenseKajal-1080x10801.jpg%3Fv%3D1679673047&w=256&q=75',
     },
     {
         name:'Arch Arrival Brow Definer',
-        price: 499,
+        price: '499',
         status : 'normal',
         catagory : 'eye',
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_df1e9403-ae9d-430c-8226-622d21c4743d.jpg%3Fv%3D1640676422&w=256&q=75',
@@ -84,7 +84,7 @@ let face = [
     {
         name:'Charcoal Patrol Bubble Mask',
         price:112,
-        shades: null,
+        shades: 'N/A',
         img:'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-charcoal-patrol-bubble-mask-12775750500435.jpg%3Fv%3D1644399394&w=256&q=75'
     },
     {
@@ -97,7 +97,7 @@ let face = [
     {
         name:'Face Palette + Lip Balm',
         price:799,
-        shades: null,
+        shades: 'N/A',
         img:'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F08.jpg%3Fv%3D1630511040&w=256&q=75'
 
     },
@@ -118,30 +118,27 @@ let face = [
 
 ]
 //////ALL DATAABOVE /////////////////////
-const body  = document.getElementById('slideshow');
+const body  = document.getElementById('slides');
 const img = document.createElement('img');
-img.setAttribute('src',slideshow[0])
-body.append(img)
-
-
-slideshow_(1)
-function slideshow_(n){
-let cnt = n;
+var counter = 1
+localStorage.setItem('lips',JSON.stringify(lips))
+localStorage.setItem('eyes',JSON.stringify(Eye))
+localStorage.setItem('face',JSON.stringify(face))
 setInterval(function(){
-    if(cnt==9){
-        cnt = 0
+    document.getElementById('radio'+counter).checked = true
+    counter++;
+    if(counter>9){
+        counter=1
     }
-    img.setAttribute('src',slideshow[cnt])
-    body.append(img)
-    console.log('cnt= '+cnt);
-    cnt++;
 },3000)
-}
+
 const bestseller_card = document.getElementById('bestseller_card');
-Display_bestseller();
-function Display_bestseller(){
-    bestseller_card.innerHTML = '';
-    lips.forEach(function(element){
+Display_bestseller(lips);
+Display_bestseller(Eye);
+console.log(lips);
+function Display_bestseller(data){
+    //bestseller_card.innerHTML = '';
+    data.forEach(function(element){
         if(element.status=='bestseller'){
             const div = document.createElement('div');
             const img = document.createElement('img');
@@ -150,13 +147,13 @@ function Display_bestseller(){
             const price = document.createElement('h3');
             const div2 = document.createElement('div');
             const fev = document.createElement('h3');
-            const add = document.createElement('button');
+            const add = document.createElement('h3');
             img.setAttribute('src',element.img)
             name.innerText = element.name
             shade.innerText = element.shade
             price.innerText = element.price
-            fev.innerText ='Add to Fev';
-            add.innerText = 'Add to Cart';
+            fev.innerHTML = '&#10084;';
+            add.innerHTML = '<i class="fa fa-shopping-cart"></i>';
             div2.append(fev,add)
             div.append(img,name,shade,price,div2)
             bestseller_card.append(div)
