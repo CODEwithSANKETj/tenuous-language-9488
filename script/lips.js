@@ -1,8 +1,10 @@
-let lips_ = JSON.parse(localStorage.getItem('lips')) || [];
+let lips_ = JSON.parse(localStorage.getItem('lips_data')) || [];
 const card = document.getElementById('right');
-let sorted = []
-Display(lips_)
+let sorted = [];
+let cart_data = JSON.parse(localStorage.getItem('cart_data')) || [];
 const filter = document.getElementById('sort_price');
+Display(lips_)
+
 filter.addEventListener('change',function(e){
     e.preventDefault();
     sorted = lips_
@@ -52,10 +54,30 @@ function Display(data){
             price.innerText = element.price
             fev.innerHTML = '&#10084;';
             add.innerHTML = '<i class="fa fa-shopping-cart"></i>';
+            add.addEventListener('click',function(e){
+                e.preventDefault();
+                let flag =chekrepeat(element)
+                if(flag){
+                  alert('Product Already in Cart');
+                }
+                else{
+                  cart_data.push(element)
+                  localStorage.setItem('cart_data',JSON.stringify(cart_data));
+                  alert('Product Added !')
+                }
+            })
             div2.append(fev,add)
             div.append(img,name,shade,price,div2)
             card.append(div)
         }
     )
 
+}
+function chekrepeat(element){
+  for(let i=0;i<cart_data.length;i++){
+    if(cart_data[i]==element){
+      return true;
+    }
+  }
+  return false;
 }
