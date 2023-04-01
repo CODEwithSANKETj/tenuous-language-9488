@@ -16,6 +16,7 @@ let lips = [{
         price : 849,
         status : 'bestseller',
         catagory : 'lips',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_044847a5-bda3-4987-ac04-5bca0ff63193.jpg%3Fv%3D1680073209&w=256&q=75',
       },
     {
@@ -24,6 +25,7 @@ let lips = [{
         price : 799,
         status : 'bestseller',
         catagory : 'lips_set',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg%3Fv%3D1620651966&w=256&q=75',
       },
     {
@@ -32,6 +34,7 @@ let lips = [{
         price : 749,
         status : 'normal',
         catagory : 'lips',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg%3Fv%3D1645608270&w=256&q=75',
       },
     {
@@ -40,6 +43,7 @@ let lips = [{
         price : '510',
         status : 'normal',
         catagory : 'lips',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-lipping-on-the-edge-lip-liner-01-taffeta-terracotta-13278188568659.jpg%3Fv%3D1619109027&w=256&q=75',
       }, 
 ]
@@ -49,6 +53,7 @@ let Eye = [
         price: '1199',
         status : 'normal',
         catagory : 'eye_set',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg%3Fv%3D1639755559&w=256&q=75',
     },
     {
@@ -56,6 +61,7 @@ let Eye = [
         price: '249',
         status : 'bestseller',
         catagory : 'eye',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FKohlOfHonourIntenseKajal-1080x10801.jpg%3Fv%3D1679673047&w=256&q=75',
     },
     {
@@ -63,6 +69,7 @@ let Eye = [
         price: '499',
         status : 'normal',
         catagory : 'eye',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_df1e9403-ae9d-430c-8226-622d21c4743d.jpg%3Fv%3D1640676422&w=256&q=75',
     },
     {
@@ -70,6 +77,7 @@ let Eye = [
         price: 799,
         status : 'normal',
         catagory : 'eye',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FDouble-Date-Extreme-Volume-Mascara-Powered-by-Images-1025x1400-1.jpg%3Fv%3D1636386431&w=256&q=75',
     },
     {
@@ -77,6 +85,7 @@ let Eye = [
         price: 1099,
         status : 'normal',
         catagory : 'eye_set',
+        value : 1,
         img : 'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F6_61ad7467-9b14-4f5a-839e-aed3c5ba3684.jpg%3Fv%3D1674058444&w=256&q=75',
     }
 ]
@@ -85,12 +94,14 @@ let face = [
         name:'Charcoal Patrol Bubble Mask',
         price:112,
         shades: 'N/A',
+        value : 1,
         img:'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-charcoal-patrol-bubble-mask-12775750500435.jpg%3Fv%3D1644399394&w=256&q=75'
     },
     {
         name:'Ace Of Face Foundation Stick',
         price:999,
         shades: '18 shades',
+        value : 1,
         img:'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg%3Fv%3D1640178644&w=256&q=75'
 
     },
@@ -98,6 +109,7 @@ let face = [
         name:'Face Palette + Lip Balm',
         price:799,
         shades: 'N/A',
+        value : 1,
         img:'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F08.jpg%3Fv%3D1630511040&w=256&q=75'
 
     },
@@ -105,6 +117,7 @@ let face = [
         name:'Goddess Of Flawless BB serum',
         price:699,
         shades: '7 shades',
+        value : 1,
         img:'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F476667375-1.jpg%3Fv%3D1678725375&w=256&q=75'
 
     },
@@ -112,6 +125,7 @@ let face = [
         name:'Goddess Of Flawless SPF30+ BB Cream',
         price:680,
         shades: '7 shades',
+        value : 1,
         img:'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796432941139.jpg%3Fv%3D1619114695&w=256&q=75'
 
     },
@@ -121,9 +135,9 @@ let face = [
 const body  = document.getElementById('slides');
 const img = document.createElement('img');
 var counter = 1
-localStorage.setItem('lips',JSON.stringify(lips))
-localStorage.setItem('eyes',JSON.stringify(Eye))
-localStorage.setItem('face',JSON.stringify(face))
+localStorage.setItem('lips_data',JSON.stringify(lips));
+localStorage.setItem('eyes_data',JSON.stringify(Eye));
+localStorage.setItem('face_data',JSON.stringify(face));
 setInterval(function(){
     document.getElementById('radio'+counter).checked = true
     counter++;
@@ -135,7 +149,6 @@ setInterval(function(){
 const bestseller_card = document.getElementById('bestseller_card');
 Display_bestseller(lips);
 Display_bestseller(Eye);
-console.log(lips);
 function Display_bestseller(data){
     //bestseller_card.innerHTML = '';
     data.forEach(function(element){

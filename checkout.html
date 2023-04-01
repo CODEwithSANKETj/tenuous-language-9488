@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/checkout.css">
+</head>
+<body>
+
+    <h1>Welcome to Payment Page</h1>
+    <h1 >Your total amout to be paid is <h1 id="amount"></h1> </h1>
+    <h2>Click Here you make a Payment <button onclick="Submit()">Click</button></h2>
+
+    <div id="show">
+
+        <input type="number" placeholder="Enter OTP Here" id="number">
+        <button id="btn" onclick="ChkOTP()">Submit</button>
+    </div>
+
+    <div id="success">
+        <h1 style="color: rgb(76, 206, 76);">Your Transation is Completed</h1>
+        <a href="/index.html"><h1>Continue Shopping</h1></a>
+
+    </div>
+    <div id="fail">
+        <h1 style="color: rgb(246, 39, 16);" >Your Transation Failed</h1>
+        <a href="/checkout.html"><h2>Click here to restart payment process</h2></a>
+    </div>
+</body>
+<script src="/script/checkout.js"></script>
+</html>
