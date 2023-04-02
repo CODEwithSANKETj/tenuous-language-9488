@@ -40,7 +40,7 @@ let lips = [{
     {
         name : 'Nothing Else Matter Longwear Lipstick',
         shade : '33 shades',
-        price : '510',
+        price : 510,
         status : 'normal',
         catagory : 'lips',
         value : 1,
@@ -50,7 +50,7 @@ let lips = [{
 let Eye = [
     {
         name:'Blend The Rules Eyeshadow Palette',
-        price: '1199',
+        price: 1199,
         status : 'normal',
         catagory : 'eye_set',
         value : 1,
@@ -58,7 +58,7 @@ let Eye = [
     },
     {
         name:'Kohl Of Honour Intense Kajal - 01 Black Out',
-        price: '249',
+        price: 249,
         status : 'bestseller',
         catagory : 'eye',
         value : 1,
@@ -66,7 +66,7 @@ let Eye = [
     },
     {
         name:'Arch Arrival Brow Definer',
-        price: '499',
+        price: 499,
         status : 'normal',
         catagory : 'eye',
         value : 1,
@@ -134,6 +134,7 @@ let face = [
 //////ALL DATAABOVE /////////////////////
 const body  = document.getElementById('slides');
 const img = document.createElement('img');
+let cart_data = JSON.parse(localStorage.getItem('cart_data')) || []
 var counter = 1
 localStorage.setItem('lips_data',JSON.stringify(lips));
 localStorage.setItem('eyes_data',JSON.stringify(Eye));
@@ -156,19 +157,30 @@ function Display_bestseller(data){
             const div = document.createElement('div');
             const img = document.createElement('img');
             const name = document.createElement('p');
-            const shade = document.createElement('h4');
+            
             const price = document.createElement('h3');
             const div2 = document.createElement('div');
             const fev = document.createElement('h3');
             const add = document.createElement('h3');
             img.setAttribute('src',element.img)
             name.innerText = element.name
-            shade.innerText = element.shade
-            price.innerText = element.price
+            
+            price.innerText = '₹'+' '+element.price
             fev.innerHTML = '&#10084;';
             add.innerHTML = '<i class="fa fa-shopping-cart"></i>';
+            add.addEventListener('click',function(e){
+                e.preventDefault();
+                if(cart_data.includes(element)){
+                    alert('Product Already in Cart')
+                }
+                else{
+                    cart_data.push(element);
+                    localStorage.setItem('cart_data',JSON.stringify(cart_data));
+                    alert('Product added Successfully!');
+                }
+            })
             div2.append(fev,add)
-            div.append(img,name,shade,price,div2)
+            div.append(img,name,price,div2)
             bestseller_card.append(div)
         }
     })

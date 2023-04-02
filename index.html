@@ -18,157 +18,193 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="nav">
-        <img  src="/Images/Glamor.png" alt="">
-        <input class="searchInput" style="background-color: rgb(43, 47, 47);border:1px solid var(--heading-tag-color);font-size:14px;border-radius:8px 0px 0px 8px;color:white" placeholder="Try &quot;Liquid Lipstick&quot;" id="search">
-        <button>Search</button>
-        <button>Login/Register</button>
-        <button>favorite</button>
-        <a href="/cart.html">Cart</a>
+  <div id="upper">
+    <div class="box1">
+      <a href="/index.html">
+        <img
+        src="/Images/Glamor.png"
+        alt="error"
+      />
+      </a>
     </div>
-    <div class="nav2">
-        
-        <div class="dropdown">
-            <a href="/lips.html"> LIPS</a>
-            <div class="lipdiv">
-                <div class="one">
-                    <h3>Lipstick </h3>
-                    <ul id="Lipstick">
-                      </ul>
-                </div>
-                <div class="two">
-                    <h3>Lipcare</h3>
-                    <ul id="Lipcare">
-                       
-                      </ul>
-                </div>
-                <div class="three">
-                    <h3>Lipstick Sets and Combos</h3>
-                    <ul id="combo">
-                        
-                      </ul>
-                </div>
-            </div>
-          </div>
-        <div class="dropdown1">
-            <a >FACE</a>
-            <div class="hover2">
-                <div >
-                    <h3>KAJAL </h3>
-                    <ul id="KAJAL">
-                        <li>HERE IS my 1st item</li>
-                      </ul>
-                </div>
-                <div >
-                    <h3>EYELINER</h3>
-                    <ul id="EYELINER">
-                       
-                      </ul>
-                </div>
-                <div >
-                    <h3>EYEBROW</h3>
-                    <ul id="EYEBROW">
-                        
-                      </ul>
-                </div>
-            </div>
-            
-        </div>
-        <div><a>NAILS</a></div>
-        <div><a>SKINCARE</a></div>
-        <div><a>ACCESSIORIES</a></div>
-        <div><a>GIFT KITS</a></div>
-        <div><a>BEST SELLER</a> </div>
-        <div><a>NEW LAUNCHES</a></div>
-        <div><a>OFFERS</a></div>
-        <div><a>BLOG</a></div>
+    <form class="form">
+      <input type="text" name="" id="ip" />
+      <input type="submit" value="Search" />
+    </form>
+    <div class="box2">
+      <div>
+        <img
+          src="https://thumbs.dreamstime.com/b/user-icon-glyph-gray-background-106603565.jpg"
+          alt="error"
+        />
+      </div>
+      <div>
+        <a href="#"><p>Login/Register</p></a>
+      </div>
     </div>
-    <div id="slideshow">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-            <input type="radio" name="radio-btn" id="radio6">
-            <input type="radio" name="radio-btn" id="radio7">
-            <input type="radio" name="radio-btn" id="radio8">
-            <input type="radio" name="radio-btn" id="radio9">
+    <div class="box3">
+      <div>
+        <a href="/cart.html">
+          <img
+          src="https://thumbs.dreamstime.com/b/shopping-icon-shopping-cart-icon-dark-background-simple-vector-icon-shopping-icon-shopping-cart-icon-dark-background-116659167.jpg"
+          alt="error"
+        />
+        </a>
+      </div>
+      <div>
+        <img
+          src="/Images/new.jpg"
+          alt="error"
+        />
+      </div>
+      <div>
+        <img
+          src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg"
+          alt="error"
+        />
+      </div>
+    </div>
+</div>
+<header>        
+  <nav id="navbar">
+      <ul>
+          <li><a href="/lips.html" target="_self">LIPS</a>
+          <ul class="dd1">
+              <li>LIPS</li>
+              <li>FACE</li>
+              <li>EYES</li>
+          </ul>
+          </li>
+          <li><a href="/Eyes.html" target="_self">EYES & FACE</a>
+          <ul class="dd1">
+              <li>FACE BRUSHES</li>
+              <li>EYE BRUSHES</li>
+          </ul>
+          </li>
+          <li><a href="/soon.html">OTHERS</a>
+          <ul class="dd1">
+              <li>MOISTERISER</li>
+              <li>SUNSCREEN</li>
+              <li>SETTING MIST</li>
+              <li>COFEE CULTURE RANGE</li>
+              <li>SHEET MASK COMBO</li>
+              <li>CITRUS GOT REAL RANGE</li>
+              <li>AQUAHOLIC RANGE</li>
+              <li>MASKS</li>
+          </ul>
+          </li>
+          <li><a href="/soon.html" target="_self">TRENDING</a>
+          <ul class="dd1">
+              <li>SUGAR MERCH STATION</li>
+              <li>MAKEUP KITS</li>
+              <li>BEST SELLER</li>
+              <li>SUGAR SETS</li>
+              <li>VALUE SETS</li>
+          </ul>
+          </li>
+          <li><a href="/soon.html" target="_self">BLOG</a>
+          <ul class="dd1">
+              <li>FEATURED</li>
+              <li>MAKEUP</li>
+              <li>SKINCARE</li>
+          </ul>
+          </li>
+          <li><a href="/soon.html" target="_self">OFFER</a></li>
+          <li><a href="#">STORE</a></li>
+      </ul>
+  </nav>
+
+</header>
+
+<!--Slide show-->
+<div id="slideshow">
+  <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <input type="radio" name="radio-btn" id="radio6">
+      <input type="radio" name="radio-btn" id="radio7">
+      <input type="radio" name="radio-btn" id="radio8">
+      <input type="radio" name="radio-btn" id="radio9">
 
 
-            <div class="slide first">
-            <img src='https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff4cc339d-4a3d-47f1-b4de-80f9744a69cb.jpg&w=1200&q=75' alt="">
-            </div>
-            <div class="slide">
-                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F14bd68a6-77a3-4cac-8d80-bce249d31a01.jpg&w=1200&q=75" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fe63bbea8-d7c4-490f-be8d-16cc843b3c44.jpg&w=1200&q=75" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0886c9f4-a521-4ff2-9ec7-6a5947860753.jpg&w=1200&q=75" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ffeb81cd7-cb89-4d40-8b45-b2f5bfe406d9.jpg&w=1200&q=75" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff3167316-1728-4c8d-8389-3e467cf033a0.jpg&w=1200&q=75" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0745fec9-3602-4f05-9d3e-c8862788ff3d.jpg&w=1200&q=75" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F069d0c1c-f78c-4d80-94f9-e65f3bbdda73.jpg&w=1200&q=75" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F9723d8e3-9e99-459f-acfe-4ef93089e9ef.jpg&w=1200&q=75" alt="">
-            </div>
+      <div class="slide first">
+      <img src='https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff4cc339d-4a3d-47f1-b4de-80f9744a69cb.jpg&w=1200&q=75' alt="">
+      </div>
+      <div class="slide">
+          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F14bd68a6-77a3-4cac-8d80-bce249d31a01.jpg&w=1200&q=75" alt="">
+      </div>
+      <div class="slide">
+          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fe63bbea8-d7c4-490f-be8d-16cc843b3c44.jpg&w=1200&q=75" alt="">
+      </div>
+      <div class="slide">
+          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0886c9f4-a521-4ff2-9ec7-6a5947860753.jpg&w=1200&q=75" alt="">
+      </div>
+      <div class="slide">
+          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ffeb81cd7-cb89-4d40-8b45-b2f5bfe406d9.jpg&w=1200&q=75" alt="">
+      </div>
+      <div class="slide">
+          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff3167316-1728-4c8d-8389-3e467cf033a0.jpg&w=1200&q=75" alt="">
+      </div>
+      <div class="slide">
+          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0745fec9-3602-4f05-9d3e-c8862788ff3d.jpg&w=1200&q=75" alt="">
+      </div>
+      <div class="slide">
+          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F069d0c1c-f78c-4d80-94f9-e65f3bbdda73.jpg&w=1200&q=75" alt="">
+      </div>
+      <div class="slide">
+          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F9723d8e3-9e99-459f-acfe-4ef93089e9ef.jpg&w=1200&q=75" alt="">
+      </div>
 
-            <div class="nav_auto">
-                <div class="autobut1"></div>
-                <div class="autobut2"></div>
-                <div class="autobut3"></div>
-                <div class="autobut4"></div>
-                <div class="autobut5"></div>
-                <div class="autobut6"></div>
-                <div class="autobut7"></div>
-                <div class="autobut8"></div>
-                <div class="autobut9"></div>
-            </div>
-        </div>
-        <div class="nav_manual">
-            <label for="radio1" class="manual_btn"></label>
-            <label for="radio2" class="manual_btn"></label>
-            <label for="radio3" class="manual_btn"></label>
-            <label for="radio4" class="manual_btn"></label>
-            <label for="radio5" class="manual_btn"></label>
-            <label for="radio6" class="manual_btn"></label>
-            <label for="radio7" class="manual_btn"></label>
-            <label for="radio8" class="manual_btn"></label>
-            <label for="radio9" class="manual_btn"></label>
-        </div>
-    </div>
-    <div class="bestseller">
-        <div class="bestseller_top">
-            <hr id="one">
-            <div id="mid">BEST SELLER</div>
-            <hr id="two">
-        </div>
-        <div id="bestseller_card">
-        </div> 
-    </div>
+      <div class="nav_auto">
+          <div class="autobut1"></div>
+          <div class="autobut2"></div>
+          <div class="autobut3"></div>
+          <div class="autobut4"></div>
+          <div class="autobut5"></div>
+          <div class="autobut6"></div>
+          <div class="autobut7"></div>
+          <div class="autobut8"></div>
+          <div class="autobut9"></div>
+      </div>
+  </div>
+  <div class="nav_manual">
+      <label for="radio1" class="manual_btn"></label>
+      <label for="radio2" class="manual_btn"></label>
+      <label for="radio3" class="manual_btn"></label>
+      <label for="radio4" class="manual_btn"></label>
+      <label for="radio5" class="manual_btn"></label>
+      <label for="radio6" class="manual_btn"></label>
+      <label for="radio7" class="manual_btn"></label>
+      <label for="radio8" class="manual_btn"></label>
+      <label for="radio9" class="manual_btn"></label>
+  </div>
+</div>
+
+
+<div class="bestseller">
+  <div class="bestseller_top">
+      <hr id="one">
+      <div id="mid">BEST SELLER</div>
+      <hr id="two">
+  </div>
+  <div id="bestseller_card">
+  </div> 
+</div>
 <div class="remaining">
-    <div class="hotdeals">
-        <hr id="one">
-        <div id="mid">HOT DEALS</div>
-        <hr id="two">
-    </div>
+<div class="hotdeals">
+  <hr id="one">
+  <div id="mid">HOT DEALS</div>
+  <hr id="two">
+</div>
+<div id="bestseller_card">
+</div> 
+</div>
 
-    <!-- Flickity HTML init -->
 
-<!----------------Content End------------------->
 
-<!----------------Footer Start------------------->
 <div id="footer">
     <img src="/Images/Glamor.png" alt="" />
     <div id="media">
@@ -233,7 +269,8 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
+</div>
     <div class="copy">
     <p>Copyright © 2022 GLAMOR Cosmetics. All rights reserved.</p>
     </div>

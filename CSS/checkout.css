@@ -7,3 +7,15 @@
 #fail{
     display: none;
 }
+
+#amount{
+    margin-left: 420px;
+    margin-top: -60px ;
+}
+*{
+    background-image: url('https://img.freepik.com/free-vector/modern-contactless-payment-concept_23-2147676303.jpg?w=2000');
+
+    }
+* img{
+    width: 100px;
+}

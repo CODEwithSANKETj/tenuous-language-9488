@@ -11,7 +11,8 @@ header {
     z-index: 100;
   }
   #upper {
-    background-color: #a5a4a4;
+    padding-top: -5px;
+    background-color: #030303;
     height: 60px;
     width: 100%;
     padding: 20px 50px;
@@ -24,7 +25,8 @@ header {
   .box1,
   .box2,
   .box3 {
-    width: 200px;
+    margin-left: -180px;
+    width: 300px;
     height: 50px;
   }
   .box1 > img {
@@ -32,45 +34,54 @@ header {
     
   }
   #ip {
-    width: 600px;
+    width: 450px;
     height: 50px;
     border: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 0px;
+    margin-left: -200px;
+    margin-top: 7.5px;
   }
   .form > input:nth-child(2) {
-    height: 50px;
+    height: 55px;
     width: 90px;
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 6, 6);
     font-size: 18px;
+
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    margin-left: -10px;
+    margin-left: -5px;
   }
   .box2,
   .box3 {
-    width: 100px;
+    margin-top: 11px;
+    margin-right: -20px;
+    width: 150px;
+    gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .box2 img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
   .box2 p {
-    color: rgb(255, 254, 254);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
   }
   .box3 img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
   .box3 {
+    margin-right: -100px;
     justify-content: space-around;
     color: white;
+    text-decoration: none;
 }
 
 /* Lower */
@@ -80,7 +91,7 @@ header{
     width: 100%;
     box-shadow: rgba(244, 239, 239, 0.24) 0px 3px 8px;
     height: auto;
-    background-color: white;
+    background-color: rgb(50, 50, 50);
     
 }
 #nav{
@@ -89,9 +100,7 @@ header{
     display: flex;  
     
 }
-#nav>img{
-width: 10%;
-}
+
 #nav>form>input{
     height: 100%;
 }
@@ -111,7 +120,8 @@ width: 10%;
 #navbar>ul>li>a{
     padding: 0px 10px;
     text-decoration: none;
-    color: rgb(201, 169, 169);
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 #navbar>ul>li>a:hover{
     font-weight: bold;
@@ -120,10 +130,11 @@ width: 10%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     list-style: none;    
     position: absolute;
-    top: 60px;
+    top: 55px;
     display: none;
     line-height: 30px;
-    background-color: rgb(250, 245, 245); 
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 49, 49); 
 }
 .dd1>li{
     margin-left: -20px;
@@ -149,6 +160,76 @@ width: 10%;
     
 }
 #checkout{
+  margin-top: 50px;
     display: none;
+    width: 45%;
+    margin-left: 70px;
+    background-color: #030303;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
 }
-
+#items{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  
+  gap: 15px;
+  text-align: center;
+}
+#items img{
+  width: 50px;
+}
+#items div{
+  display: flex;
+  justify-content: space-between;
+}
+#items button{
+  height: 50px;
+}
+#items p{
+  margin-top: 15px;
+  font-size: small;
+  width: 150px;
+}
+#items h3{
+  color: chocolate;
+  margin-top: 15px;
+}
+#items{
+  width: 500px;
+}
+#items > div {
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: white;
+}
+#items > div > div{
+  
+  background-color: #fdfeff;
+  border: 1px solid grey;
+  border-radius: 15px;
+  width: 120px; 
+  text-align: center;
+  margin-top: 17px; 
+  margin-bottom: 20px;
+}
+#items button{
+  cursor: pointer;
+  height: 25px;
+  border-radius: 15px;
+  border: none;
+  font: bold;
+  background-color: white;
+  font-size: medium;
+}
+#items img{
+  border-radius: 15px;
+}
+#right{
+  width: 300px;
+  text-align: center;
+    justify-content: center;
+    align-items: center;
+}

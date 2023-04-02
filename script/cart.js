@@ -32,7 +32,7 @@ function Display(data){
             below.append(incr,quantity,decr,delete_)
             img.setAttribute('src',data[i].img)
             name.innerText = data[i].name
-            price.innerText = data[i].price
+            price.innerText = '₹'+' '+data[i].price
             amout+=data[i].price*data[i].value
             
             delete_.innerText = 'Delete'
@@ -64,8 +64,7 @@ function Display(data){
             items.append(div)
         }
     
-        total.innerHTML = amout
-        final.innerText = amout
+        final.innerText = '₹'+' '+amout
         localStorage.setItem('checkout',JSON.stringify(amout))
        
 }
